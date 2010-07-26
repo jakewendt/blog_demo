@@ -4,3 +4,5 @@ log/*log
 db/schema.rb
 db/seeds.rb
 db/*sql
+config/initializers/mail.rb
+db/*.sqlite3

@@ -4,3 +4,7 @@
 
 * acts_as_list gem (not included.)
 
+== FYI
+
+I wrote this a few years ago and don't maintain it.
+

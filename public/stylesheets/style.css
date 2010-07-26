@@ -1,0 +1,97 @@
+* {
+  font-family: courier;
+}
+body {
+  margin: 0;
+}
+div#header {
+  border-bottom: 3px solid gray;
+  background-color: #006;
+  padding: 0.5em;
+}
+.title {
+  text-align: center;
+}
+ul.menubar {
+  text-align: center;
+  padding: 0.5em;
+  margin: 0;
+}
+ul.menubar > li {
+  display: inline;
+  padding: 0.5em;
+}
+ul.menubar > li a {
+  color: white;
+  font-size: 14pt;
+}
+div#container {
+  width: 70em;
+  margin: 0 auto;
+}
+div#content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+}
+.flash {
+  padding: 0.7em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12pt;
+}
+.flash#error {
+  border: 2px solid #F44;
+  background-color: #FCC;
+}
+.flash#notice {
+  border: 2px solid #4F4;
+  background-color: #CFC;
+}
+a {
+  color: black;
+  padding: 0;
+  text-decoration: none;
+  font-size: 11pt;
+}
+h1.title > a {
+  color: white;
+  font-size: 24pt;
+}
+p > a,
+p {
+  font-size: 14pt;
+  line-height: 18pt;
+}
+.post_title > a,
+.post_title {
+  font-size: 18pt;
+  font-weight: bold;
+}
+.footnote {
+  font-size: 10pt;
+}
+p.post_body > a {
+  background-color: #AAF;
+}
+table#users td {
+  padding-left: 0.4em;
+}
+
+input.text {
+  width: 100%;
+}
+textarea {
+  height: 10em;
+  width: 100%;
+}
+div#user_profile, 
+form#forgot_password, 
+form#change_password, 
+form#reset_password, 
+form#edit_user, 
+form#new_session, 
+form#new_user {
+  margin: 0 auto;
+  width: 60ex;
+}

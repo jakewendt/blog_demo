@@ -12,7 +12,7 @@ class CreateRolesUsers < ActiveRecord::Migration
       :password => "admin",
       :password_confirmation => "admin"
     })
-    user.roles << Role.find_by_name('administrator')
+    user.roles << Role.find_or_create_by_name('administrator')
     user.save(false)
     user = User.find_by_login('admin')
     user.send(:activate!)

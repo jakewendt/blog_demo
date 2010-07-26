@@ -1,3 +1,3 @@
 class Page < ActiveRecord::Base
-  acts_as_list
+	acts_as_list
 end
