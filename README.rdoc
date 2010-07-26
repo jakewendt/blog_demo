@@ -3,6 +3,7 @@
 == Requires ..
 
 * acts_as_list gem (not included.)
+* your own mail settings in config/initializers/mail.rb
 
 == Then ...
 
