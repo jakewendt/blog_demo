@@ -4,6 +4,12 @@
 
 * acts_as_list gem (not included.)
 
+== Then ...
+
+* rake db:migrate
+* script/server
+* login as admin with password admin
+
 == FYI
 
 I wrote this a few years ago and don't maintain it.
