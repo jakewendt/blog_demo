@@ -12,5 +12,5 @@ Rails::Initializer.run do |config|
 		:lib => 'acts_as_list', 
 		:source => 'http://gems.github.com'
 
-  config.time_zone = 'UTC'
+	config.time_zone = 'UTC'
 end
