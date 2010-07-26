@@ -1,0 +1,7 @@
+<p class='footnote'>On <%= comment.created_at.to_s(:long) %>, <%=h comment.user.login %> said ... 
+<% if logged_in? && ( comment.user == current_user || current_user.has_role?('administrator') ) %>
+ | <%= link_to 'Edit', edit_post_comment_path(comment.post, comment) %>
+ | <%= link_to 'Delete', post_comment_path(comment.post, comment), :method => :delete %>
+<% end %>
+</p>
+<p class='comment_body'><%=h comment.body %></p>

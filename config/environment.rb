@@ -7,5 +7,10 @@
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
+
+	config.gem 'ryanb-acts-as-list', 
+		:lib => 'acts_as_list', 
+		:source => 'http://gems.github.com'
+
   config.time_zone = 'UTC'
 end

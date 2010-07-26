@@ -1,0 +1,18 @@
+<h1>Editing role</h1>
+
+<%= error_messages_for :role %>
+
+<% form_for(@role) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name, :class => 'text' %>
+  </p>
+
+  <p> <%= f.submit "Update" %> </p>
+<% end %>
+
+<%= link_to 'Show', @role %> |
+<%= link_to 'Back', roles_path %>
+<script type='text/javascript'>
+  document.getElementById('role_name').focus()
+</script>

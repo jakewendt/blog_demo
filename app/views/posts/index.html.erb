@@ -1,0 +1,35 @@
+
+<% unless @posts.blank? %>
+  <% for post in @posts %>
+    <p class='post_title'><%= link_to h( post.title ), post %>
+      <% if logged_in? && current_user.has_role?('administrator') %>
+        | <%= link_to 'Edit', edit_post_path(post) %>
+        | <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+      <% end %>
+    </p>
+
+    <p class='post_body'>
+      <% if post.body.length > 500 %>
+        <%= post.body[0..497] + " ... " %>
+      <% else %>
+        <%= post.body %>
+      <% end %>
+    </p>
+
+    <p class='footnote'>
+      Posted: <%=h post.created_at.to_s(:long) %>
+      <% if post.created_at < post.updated_at %>
+        | Updated: <%=h post.updated_at.to_s(:long) %>
+      <% end %>
+      | Comments: <%= post.comments.count %>
+    </p>
+  <% end %>
+
+<% else %>
+  <p>There are no posts.  Kinda lame for a blog, huh?</p>
+<% end %>
+<br />
+
+<% if logged_in? && current_user.has_role?('administrator') %>
+  <%= link_to 'New post', new_post_path %>
+<% end %>

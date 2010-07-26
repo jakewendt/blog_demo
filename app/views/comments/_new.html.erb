@@ -1,0 +1,11 @@
+<hr/>
+<% if logged_in? %>
+  <h2>Leave a comment</h2>
+  <%= error_messages_for :comment %>
+  <% form_for Comment.new, :url => post_comments_path(post) do |f| %>
+    <p><%= f.text_area :body, :cols => 70, :rows => 10 %></p>
+    <p><%= f.submit "Create" %></p>
+  <% end %>
+<% else %>
+  <h2>Login to leave a comment</h2>
+<% end %>

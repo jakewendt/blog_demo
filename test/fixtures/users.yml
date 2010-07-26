@@ -1,0 +1,71 @@
+quentin:
+  id: 1
+  login: quentin
+  email: test1@jakewendt.com
+  salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd
+  crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+  created_at: <%= 5.days.ago.to_s :db %>
+  activation_code: 8f24789ae988411ccf33ab0c30fe9106fab32e9b 
+  activated_at: <%= 5.days.ago.to_s :db %> 
+
+aaron:
+  id: 2
+  login: aaron
+  email: test2@jakewendt.com
+  salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd
+  crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+  created_at: <%= 1.days.ago.to_s :db %>
+  activation_code: 8f24789ae988411ccf33ab0c30fe9106fab32e9a 
+  activated_at: <%= 5.days.ago.to_s :db %> 
+
+jakeb:
+  id: 3
+  login: jakeb
+  email: test3@jakewendt.com
+  salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd
+  crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+  created_at: <%= 3.days.ago.to_s :db %>
+  activation_code: 8f24789ae988411ccf33ab0c30fe9106fab32e9a 
+  activated_at: <%= 5.days.ago.to_s :db %> 
+
+# not yet activated
+nouveau:
+  id: 4
+  login: nouveau
+  email: test4@jakewendt.com
+  salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd
+  crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+  created_at: <%= 3.days.ago.to_s :db %>
+  activation_code: test_activation_code
+
+forgetter:
+  id: 5
+  login: forgetter
+  email: test5@jakewendt.com
+  salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd
+  crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+  created_at: <%= 3.days.ago.to_s :db %>
+  activation_code: 8f24789ae988411ccf33ab0c30fe9106fab32e9a 
+  activated_at: <%= 5.days.ago.to_s :db %> 
+  password_reset_code: test_reset_code
+
+activeuser:
+  id: 6
+  login: activeuser
+  email: test6@jakewendt.com
+  salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd
+  crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+  created_at: <%= 3.days.ago.to_s :db %>
+  activation_code: already_active_code
+  activated_at: <%= 5.days.ago.to_s :db %> 
+
+admin:
+  id: 7
+  login: admin
+  email: blog@jakewendt.com
+  salt: 7e3041ebc2fc05a40c60028e2c4901a81035d3cd
+  crypted_password: 00742970dc9e6319f8019fd54864d3ea740f04b1 # test
+  created_at: <%= 3.days.ago.to_s :db %>
+  activation_code: already_active_code
+  activated_at: <%= 5.days.ago.to_s :db %> 
+

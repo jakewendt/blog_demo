@@ -1,0 +1,20 @@
+<%= error_messages_for :post %>
+
+<% form_for(@post) do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title, :class => 'text' %>
+  </p>
+
+  <p>
+    <b>Body</b><br />
+    <%= f.text_area :body %>
+  </p>
+
+  <p> <%= f.submit "Create" %> </p>
+<% end %>
+
+<%= link_to 'Back', posts_path %>
+<script type='text/javascript'>
+  document.getElementById('post_title').focus();
+</script>

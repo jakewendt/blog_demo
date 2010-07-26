@@ -1,0 +1,6 @@
+= Simple Rails Blog Demo
+
+== Requires ..
+
+* acts_as_list gem (not included.)
+

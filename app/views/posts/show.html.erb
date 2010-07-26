@@ -1,0 +1,23 @@
+<p class='post_title'>
+  <%= @post.title %>
+<% if logged_in? && current_user.has_role?('administrator') %>
+ | <%= link_to 'Edit', edit_post_path(@post) %>
+<% end %>
+</p>
+
+<p class='post_body'>
+  <%= @post.body %>
+</p>
+
+  <p class='footnote'>
+    Posted: <%=h @post.created_at.to_s(:long) %>
+<% if @post.created_at < @post.updated_at %>
+    | Updated: <%=h @post.updated_at.to_s(:long) %>
+<% end %>
+  </p>
+<p class='footnote'>Comments: <%= @post.comments_count %></p>
+<hr/>
+
+<%= render :partial => 'comments/comment', :collection => @post.comments %>
+<%= render :partial => 'comments/new', :locals => { :post => @post } %>
+
