@@ -1,4 +1,4 @@
-= Simple Rails Blog Demo
+= Simple Rails Blog Demo (from restful_authentication)
 
 == Requires ..
 
