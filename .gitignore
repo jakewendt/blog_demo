@@ -1,0 +1,6 @@
+.svn
+versions
+log/*log
+db/schema.rb
+db/seeds.rb
+db/*sql
